@@ -23,8 +23,12 @@ namespace EventDatabase.Models
         public decimal PriceOfEntertainment { get; set; }
         public string ColorOrThem { get; set; }
         public decimal PriceOfDecortion { get; set; }
+        public string Outfits { get; set; }
+        public decimal PriceOfOutfits { get; set; }
+        public decimal MissAlse { get; set; }
         public decimal TotalPrice { get; set; }
         public int NumberOfInviteScent { get; set; }
         public int NumberOfConfirmed { get; set; }
+        public IList<Organizer> Organizer { get; set;}
     }
 }
