@@ -13,9 +13,8 @@ namespace EventDatabase.Models
         public DateTime EventDate { get; set; }
         public decimal TotalBuget { get; set; }
         public string Location { get; set; }
+        public Address LocatonAddress { get; set; }
         public decimal PriceOfLocation { get; set; }
-        public string EventAddressStreet { get; set; }
-        public  string EventAddressCity { get; set; }
         public string Food { get; set; }
         public decimal PriceOfFood { get; set; }
         public string Entertainment { get; set; }
@@ -27,8 +26,11 @@ namespace EventDatabase.Models
         public decimal PriceOfOutfits { get; set; }
         public decimal MissAlse { get; set; }
         public decimal TotalPrice { get; set; }
+        public decimal AmountMoneyLeft { get; set; }
         public int NumberOfInviteScent { get; set; }
         public int NumberOfConfirmed { get; set; }
+        public int NumberOfDeclained { get; set; }
+        public int NumberOfUnConfirmed { get; set; }
         public IList<Organizer> Organizer { get; set;}
     }
 }
