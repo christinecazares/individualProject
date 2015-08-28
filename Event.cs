@@ -6,9 +6,11 @@ using System.Web;
 namespace EventDatabase.Models
 {
     public class Event
-    {    
+    {
+        
+
         public int EventId { get; set; }
-        public string Name { get; set; }
+        public string EventName { get; set; }
         public string EventType { get; set; }
         public DateTime EventDate { get; set; }
         public decimal TotalBuget { get; set; }
