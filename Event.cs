@@ -8,8 +8,8 @@ namespace EventDatabase.Models
     public class Event
     {
         
-
-        public int EventId { get; set; }
+        
+        public int Id { get; set; }
         public string EventName { get; set; }
         public string EventType { get; set; }
         public DateTime EventDate { get; set; }
